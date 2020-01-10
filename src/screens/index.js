@@ -5,4 +5,5 @@ export { default as ForgotPasswordScreen } from './ForgotPasswordScreen';
 export { default as Dashboard } from './Dashboard';
 export { default as BarcodeScanner } from './BarcodeScanner';
 export { default as LinksScreen } from './LinksScreen';
+export { default as Logger } from './Logger';
 

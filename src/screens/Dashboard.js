@@ -14,7 +14,7 @@ const Dashboard = ({ navigation }) => (
     <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
       Admin
     </Button>
-    <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
+    <Button mode="outlined" onPress={() => navigation.navigate('Logger')}>
           Logger
         </Button>
     <BackButton goBack={() => navigation.navigate('HomeScreen')} />

@@ -13,8 +13,11 @@ import * as SQLite from 'expo-sqlite';
   `${FileSystem.documentDirectory}SQLite/treevy.db/`
 );*/
 
-const db = SQLite.openDatabase(`${FileSystem.documentDirectory}SQLite/treevy.db`);
+const db = SQLite.openDatabase(`db.db`);
 ///
+const LoginScreen = ({ navigation }) => {
+}
+
 
 export default class BarcodeScanner extends React.Component {
   state = {
