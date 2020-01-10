@@ -21,6 +21,14 @@ const HomeScreen = ({ navigation }) => (
     >
       Scan QR-Code
     </Button>
+
+    <Button
+      mode="outlined"
+      onPress={() => navigation.navigate('LinksScreen')}
+    >
+      Send Data
+    </Button>
+
   </Background>
 );
 

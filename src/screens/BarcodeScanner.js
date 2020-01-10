@@ -3,6 +3,19 @@ import { Text, View, StyleSheet, Button } from 'react-native';
 import * as Permissions from 'expo-permissions';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
+///
+import * as FileSystem from 'expo-file-system';
+import { Asset } from 'expo-asset';
+import * as SQLite from 'expo-sqlite';
+
+/*FileSystem.downloadAsync(
+  Asset.fromModule(require('../assets/db/treevydb/')).uri,
+  `${FileSystem.documentDirectory}SQLite/treevy.db/`
+);*/
+
+const db = SQLite.openDatabase(`${FileSystem.documentDirectory}SQLite/treevy.db`);
+///
+
 export default class BarcodeScanner extends React.Component {
   state = {
     hasCameraPermission: null,
@@ -35,25 +48,41 @@ export default class BarcodeScanner extends React.Component {
           justifyContent: 'flex-end',
         }}>
         <BarCodeScanner
-          onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
+          onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}  // when scanned function wird aufgerufen
           barCodeTypes={[BarCodeScanner.Constants.BarCodeType.qr]}
           style={StyleSheet.absoluteFillObject}
         />
 
         {scanned && (
-          <Button title={'Tap to Scan Again'} onPress={() => this.setState({ scanned: false })} />
+          <Button title={'Tap to Scan'} onPress={() => this.setState({ scanned: false })} />
         )}
       </View>
     );
   }
 
- 
+///
 
-  handleBarCodeScanned = ({ type, data }) => {
+//function isInDB (){}
+
+
+///
+
+
+  handleBarCodeScanned = ({ type, data }) => { //What happends when Barcode got scanned?
   console.log("scanned Barcode")
     this.setState({ scanned: true });
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+    
   
+  QR = data;
+  QR => db.transaction(
+    tx => {
+      tx.executeSql(`select from Treelog where QR = ?;`, [QR]);
+    }, null, this.update)
+  ///
+
+
+    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+  console.log(data);
   };
 }
 

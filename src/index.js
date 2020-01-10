@@ -8,6 +8,7 @@ import {
   BarcodeScanner,
   ForgotPasswordScreen,
   Dashboard,
+  LinksScreen,
  } from './screens';
 
 const Router = createStackNavigator(
@@ -18,6 +19,7 @@ const Router = createStackNavigator(
     RegisterScreen,
     ForgotPasswordScreen,
     Dashboard,
+    LinksScreen,
   },
   {
     initialRouteName: 'HomeScreen',
