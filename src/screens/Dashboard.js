@@ -3,19 +3,21 @@ import Background from '../components/Background';
 import Logo from '../components/Logo';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
+import BackButton from '../components/BackButton';
 import Button from '../components/Button';
 
 const Dashboard = ({ navigation }) => (
   <Background>
     <Logo />
-    <Header>Let’s start</Header>
-    <Paragraph>
-      Your amazing app starts here. Open you favourite code editor and start
-      editing this project.
-    </Paragraph>
-    <Button mode="outlined" onPress={() => navigation.navigate('HomeScreen')}>
-      Logout
+    <Header>Choose your function</Header>
+
+    <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
+      Admin
     </Button>
+    <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
+          Logger
+        </Button>
+    <BackButton goBack={() => navigation.navigate('HomeScreen')} />
   </Background>
 );
 
