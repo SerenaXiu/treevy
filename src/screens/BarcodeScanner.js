@@ -17,6 +17,7 @@ const db = SQLite.openDatabase(`${FileSystem.documentDirectory}SQLite/treevy.db`
 ///
 
 export default class BarcodeScanner extends React.Component {
+
   state = {
     hasCameraPermission: null,
     scanned: true,
@@ -64,9 +65,7 @@ export default class BarcodeScanner extends React.Component {
 
 //function isInDB (){}
 
-
 ///
-
 
   handleBarCodeScanned = ({ type, data }) => { //What happends when Barcode got scanned?
   console.log("scanned Barcode")
@@ -85,8 +84,6 @@ export default class BarcodeScanner extends React.Component {
   console.log(data);
   };
 }
-
-
 
 BarcodeScanner.navigationOptions = {
   header: null,

@@ -4329,6 +4329,13 @@ react-native-status-bar-height@^2.4.0:
   resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.4.0.tgz#de8cee4bb733a196167210d2d0bc1fa10acba3e3"
   integrity sha512-pWvZFlyIHiuxLugLioq97vXiaGSovFXEyxt76wQtbq0gxv4dGXMPqYow46UmpwOgeJpBhqL1E0EKxnfJRrFz5w==
 
+react-native-tableview-simple@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-tableview-simple/-/react-native-tableview-simple-2.4.1.tgz#d7bc70bbeb4c9e079538898e4d74882fb1263768"
+  integrity sha512-aVWiTVWs+Q5s/iXIk+2+nQjwHTjUuO0tqeGmNo0VkOU75TDvB2Ryf0yIw9/SY7L5Lj/OlKEa1gANftIaLOFv0Q==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-native-view-shot@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-2.6.0.tgz#3b23675826f67658366352c4b97b59a6aded2f43"

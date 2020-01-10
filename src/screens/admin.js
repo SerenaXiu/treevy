@@ -11,7 +11,7 @@ const Dashboard = ({ navigation }) => (
     <Logo />
     <Header>Choose your function</Header>
 
-    <Button mode="outlined" onPress={() => navigation.navigate('admin')}>
+    <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
       Admin
     </Button>
     <Button mode="outlined" onPress={() => navigation.navigate('LinksScreen')}>
