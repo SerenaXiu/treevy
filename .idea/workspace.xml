@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8a59624-d744-45ea-96e6-2b5c908256da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/BlockChainz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/LinksScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/LinksScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/LoginScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/admin.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,12 +124,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1961" />
+          <entry key="js" value="1980" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1961" />
+          <entry key="JavaScript" value="1980" />
         </counts>
       </usages-collector>
     </session>
@@ -159,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="219">
+              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -186,7 +181,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BlockChainz.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -236,9 +231,9 @@
         <option value="$PROJECT_DIR$/src/core/utils.js" />
         <option value="$PROJECT_DIR$/src/screens/LinksScreen.js" />
         <option value="$PROJECT_DIR$/src/screens/HomeScreen.js" />
-        <option value="$PROJECT_DIR$/src/screens/LoginScreen.js" />
         <option value="$PROJECT_DIR$/src/screens/admin.js" />
         <option value="$PROJECT_DIR$/src/components/BlockChainz.js" />
+        <option value="$PROJECT_DIR$/src/screens/LoginScreen.js" />
       </list>
     </option>
   </component>
@@ -325,7 +320,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="email&#9;FILE&#9;file://C:/Users/PC/signer-demo/treevys/node_modules/metro/node_modules/fbjs/lib/isEmail.js&#10;login&#9;FILE&#9;file://C:/Users/PC/signer-demo/treevys/.idea/react-native-login-template-master.iml" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578773893488" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578774431184" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -561,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/BarcodeScanner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -593,6 +581,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
         </state>
       </provider>
     </entry>

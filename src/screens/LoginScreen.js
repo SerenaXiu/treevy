@@ -28,7 +28,7 @@ if (emailError || passwordError) {
 
   return (
     <Background>
-      <BackButton goBack={() => navigation.navigate('Dashboard')} />
+      <BackButton goBack={() => navigation.navigate('HomeScreen')} />
 
       <Logo />
 
