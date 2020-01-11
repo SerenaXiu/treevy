@@ -153,7 +153,6 @@ const admin = ({ navigation }) => (
 
     <BlockChainz />
 
-
     <BackButton goBack={() => navigation.navigate('Dashboard')} />
   </Background>
 );
