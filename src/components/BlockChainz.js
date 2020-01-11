@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 
-export default function Logger() {
+export default function admin() {
 
   let state = {
     table: [
