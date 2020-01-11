@@ -15,8 +15,8 @@ const Dashboard = ({ navigation }) => (
       Admin
     </Button>
     <Button mode="outlined" onPress={() => navigation.navigate('Logger')}>
-          Logger
-        </Button>
+      Logger
+    </Button>
     <BackButton goBack={() => navigation.navigate('HomeScreen')} />
   </Background>
 );

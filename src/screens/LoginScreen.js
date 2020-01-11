@@ -2,7 +2,6 @@ import React, { memo, useState } from 'react';
 import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
 import Background from '../components/Background';
 import Logo from '../components/Logo';
-import Header from '../components/Header';
 import Button from '../components/Button';
 import TextInput from '../components/TextInput';
 import BackButton from '../components/BackButton';
@@ -17,12 +16,16 @@ const LoginScreen = ({ navigation }) => {
     const emailError = emailValidator(email.value);
     const passwordError = passwordValidator(password.value);
 
-if (emailError || passwordError) {
+    if (emailError || passwordError) {
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
-      return;
     }
-
+    /*
+    if (email.value == 'thomas.schneider@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
+    if (email.value == 'greta.schneider@wien.at' && password.value == 'treevy' ) { navigation.navigate('admin')};
+    if (email.value == 'wolfgang.beckmann@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
+    if (email.value == 'caroline.weber@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
+    */
     navigation.navigate('Dashboard');
   };
 
@@ -55,13 +58,7 @@ if (emailError || passwordError) {
         secureTextEntry
       />
 
-      <View style={styles.forgotPassword}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ForgotPasswordScreen')}
-        >
-          <Text style={styles.label}>Forgot your password?</Text>
-        </TouchableOpacity>
-      </View>
+      
 
       <Button mode="contained" onPress={_onLoginPressed}>
         Login

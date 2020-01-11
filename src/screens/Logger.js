@@ -1,16 +1,9 @@
 import React from 'react';
 
-import { CellVariant, Cell, Section, TableView } from 'react-native-tableview-simple';
+import { Cell, Section, TableView } from 'react-native-tableview-simple';
 import {
-  ActivityIndicator,
-  Dimensions,
-  Image,
   ScrollView,
   StyleSheet,
-  Switch,
-  Text,
-  TextInput,
-  View,
   Alert,
   Button
 } from 'react-native';
@@ -22,7 +15,7 @@ export default function Logger() {
   let state = {
     table: [
       {
-        qrCode: 'Tree1Log1, Tree1Log2, TreeLog3',
+        qrCode: ' Tree1Log1 \n Tree1Log2 \n TreeLog3',
         gps: { lat: 47.21894418, long: 24.71372435 },
         height: 100,
         diameter: 0.8,
@@ -31,16 +24,16 @@ export default function Logger() {
         date: "29/11/2019 - 12:21:00"
       },
       {
-        qrCode: 'Tree2Log1',
+        qrCode: ' Tree2Log1',
         gps: { lat: 47.71732435, long: 24.12372435 },
         height: 30,
         diameter: 0.6,
         treeNumber: 2,
         idWorker: 1,
         date: "29/11/2019 - 12:21:00"
-      }, 
+      },
       {
-        qrCode: 'Tree3Log1, TreeLog2',
+        qrCode: ' Tree3Log1 \n TreeLog2',
         gps: { lat: 47.94672435, long: 24.71497435 },
         height: 80,
         diameter: 0.9,
@@ -62,8 +55,8 @@ export default function Logger() {
 
   showAlert = (data) => {
     Alert.alert(
-      `${data.treeNumber}`,
-       data.qrCode ,
+      ` TREE ${data.treeNumber}`,
+      ` Logs:\n ${data.qrCode}`,
       [
         {
           text: 'Cancel',
@@ -76,34 +69,36 @@ export default function Logger() {
     );
   }
 
+
+
   return (
-
-    <ScrollView style={styles.container} >
-      <View style={{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'space-between' }}>
-        <Logo/>
-
+    <Background>
+      <Logo />
+      <ScrollView style={styles.container} >
         <TableView>
           <Section>
             {
               state.table.map((data, index) =>
-                <Cell key={index} title={data.treeNumber} style={{ flex: 1, fontSize: 12 }}
+                <Cell key={index} title={`TREE ${data.treeNumber}`} style={{ flex: 1, fontSize: 12 }}
                   onPress={() => this.showAlert(data)} />
               )
             }
           </Section>
         </TableView>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </Background>
+
   );
+
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
+    flex: 15,
+    height: 60,
+    width: 330,
+    marginTop: 40,
+    marginBottom: 50,
+    backgroundColor: 'transparent',
   },
-});
+})
