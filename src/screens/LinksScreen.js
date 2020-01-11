@@ -28,7 +28,7 @@ import * as SQLite from 'expo-sqlite';
 );
 */
 const db = SQLite.openDatabase(`${FileSystem.documentDirectory}SQLite/treevy.db`);
-//////////////////
+
 
 export default function LinksScreen() {
 

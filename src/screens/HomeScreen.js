@@ -14,19 +14,11 @@ const HomeScreen = ({ navigation }) => (
     <Button mode="outlined" onPress={() => navigation.navigate('LoginScreen')}>
       Login
     </Button>
-
     <Button
       mode="outlined"
       onPress={() => navigation.navigate('BarcodeScanner')}
     >
       Scan QR-Code
-    </Button>
-
-    <Button
-      mode="outlined"
-      onPress={() => navigation.navigate('LinksScreen')}
-    >
-      Send Data
     </Button>
 
   </Background>

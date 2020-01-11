@@ -32,8 +32,6 @@ if (emailError || passwordError) {
 
       <Logo />
 
-      <Header>Welcome back.</Header>
-
       <TextInput
         label="Email"
         returnKeyType="next"
@@ -69,12 +67,6 @@ if (emailError || passwordError) {
         Login
       </Button>
 
-      <View style={styles.row}>
-        <Text style={styles.label}>Don’t have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')}>
-          <Text style={styles.link}>Sign up</Text>
-        </TouchableOpacity>
-      </View>
     </Background>
   );
 };
