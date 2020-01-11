@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "React Native Simple Login Template",
+    "name": "Treevy",
     "slug": "react-native-simple-login-template",
     "privacy": "public",
     "sdkVersion": "35.0.0",
@@ -26,7 +26,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "Simple login template created with React Native.",
+    "description": "Simple way to track and trace trees",
     "githubUrl": "https://github.com/venits/react-native-login-template"
   }
 }
