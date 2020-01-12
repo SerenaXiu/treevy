@@ -20,13 +20,13 @@ const LoginScreen = ({ navigation }) => {
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
     }
-    /*
+    
     if (email.value == 'thomas.schneider@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
     if (email.value == 'greta.schneider@wien.at' && password.value == 'treevy' ) { navigation.navigate('admin')};
     if (email.value == 'wolfgang.beckmann@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
-    if (email.value == 'caroline.weber@wien.at' && password.value == 'treevy' ) { navigation.navigate('Logger')};
-    */
-    navigation.navigate('Dashboard');
+    if (email.value == 'caroline.weber@wien.at' && password.value == 'treevy' ) { navigation.navigate('Dashboard')};
+    
+    //navigation.navigate('Dashboard');
   };
 
   return (
