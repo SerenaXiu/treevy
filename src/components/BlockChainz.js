@@ -111,7 +111,7 @@ export default function admin() {
       .then(dataReponse => dataReponse.json())
       .then(dataReponse => console.log(dataReponse));
 
-    Alert.alert("SUCESS", "Data got sent to Blockchain!")
+    Alert.alert("SUCCESS", "Data got sent to Blockchain!")
     
   }
 

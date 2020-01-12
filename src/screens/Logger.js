@@ -14,7 +14,7 @@ export default function Logger({navigation}) {
   let state = {
     table: [
       {
-        qrCode: 'Tree1Log1 \n Tree1Log2 \n TreeLog3',
+        qrCode: 'Tree1Log1 \n Tree1Log2 \n Tree1Log3',
         gps: { lat: 47.21894418, long: 24.71372435 },
         height: 100,
         diameter: 0.8,
@@ -32,7 +32,7 @@ export default function Logger({navigation}) {
         date: "29/11/2019 - 12:21:00"
       },
       {
-        qrCode: 'Tree3Log1 \n TreeLog2',
+        qrCode: 'Tree3Log1 \n Tree3Log2',
         gps: { lat: 47.94672435, long: 24.71497435 },
         height: 80,
         diameter: 0.9,
