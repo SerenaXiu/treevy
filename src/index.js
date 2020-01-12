@@ -4,7 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import {
   HomeScreen,
   LoginScreen,
-  BarcodeScanner,
+  ScreenBarcodeScanner,
   Dashboard,
   admin,
   Logger,
@@ -14,7 +14,7 @@ const Router = createStackNavigator(
   {
     HomeScreen,
     LoginScreen,
-    BarcodeScanner,
+    ScreenBarcodeScanner,
     admin,
     Dashboard,
     Logger,

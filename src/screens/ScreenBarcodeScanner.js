@@ -2,16 +2,15 @@ import * as React from 'react';
 import { Text, View, StyleSheet, Alert, Button } from 'react-native';
 import * as Permissions from 'expo-permissions';
 import { BarCodeScanner } from 'expo-barcode-scanner';
+import BackButton from '../components/BackButton';
 
 
 
 export default class BarcodeScanner extends React.Component {
-
   state = {
     hasCameraPermission: null,
     scanning: true,
   };
-
   async componentDidMount() {
     this.getPermissionsAsync();
   }
@@ -23,7 +22,7 @@ export default class BarcodeScanner extends React.Component {
 
   render() {
     const { hasCameraPermission, scanning } = this.state;
-
+    const { navigate } = this.props.navigation;
     if (hasCameraPermission === null) {
       return <Text>Requesting for camera permission</Text>;
     }
@@ -37,17 +36,18 @@ export default class BarcodeScanner extends React.Component {
           flexDirection: 'column',
           justifyContent: 'flex-end',
         }}>
+        
         <BarCodeScanner
           onBarCodeScanned={scanning ? undefined : this.handleBarCodeScanned}  // when scanned function wird aufgerufen
           barCodeTypes={[BarCodeScanner.Constants.BarCodeType.qr]}
           style={StyleSheet.absoluteFillObject}
         />
-
+        
         {scanning && (<Button title={'Tap to Scan'} onPress={() => this.setState({ scanning: false })} />)}
+        <BackButton goBack={() => this.props.navigation.navigate('HomeScreen')} />
       </View>
     );
   }
-
   
   handleBarCodeScanned = ({ type, data }) => { //What happends when Barcode got scanned?
     console.log("scanned Barcode")

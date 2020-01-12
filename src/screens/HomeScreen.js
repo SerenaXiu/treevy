@@ -16,7 +16,7 @@ const HomeScreen = ({ navigation }) => (
     </Button>
     <Button
       mode="outlined"
-      onPress={() => navigation.navigate('BarcodeScanner')}
+      onPress={() => navigation.navigate('ScreenBarcodeScanner')}
     >
       Scan QR-Code
     </Button>
