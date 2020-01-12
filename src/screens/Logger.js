@@ -1,16 +1,15 @@
 import React from 'react';
-
 import { Cell, Section, TableView } from 'react-native-tableview-simple';
 import {
   ScrollView,
   StyleSheet,
   Alert,
-  Button
 } from 'react-native';
 import Background from '../components/Background';
 import Logo from '../components/Logo';
+import BackButton from '../components/BackButton';
 
-export default function Logger() {
+export default function Logger({navigation}) {
 
   let state = {
     table: [
@@ -73,7 +72,7 @@ export default function Logger() {
 
   return (
     <Background>
-      <Logo />
+      <BackButton goBack={() => {navigation.navigate('HomeScreen') }} />
       <ScrollView style={styles.container} >
         <TableView>
           <Section>
@@ -86,6 +85,9 @@ export default function Logger() {
           </Section>
         </TableView>
       </ScrollView>
+
+      <Logo />
+
     </Background>
 
   );
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
     flex: 15,
     height: 60,
     width: 330,
-    marginTop: 40,
+    marginTop: 70,
     marginBottom: 50,
     backgroundColor: 'transparent',
   },

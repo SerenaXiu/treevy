@@ -111,8 +111,8 @@ export default function admin() {
       .then(dataReponse => dataReponse.json())
       .then(dataReponse => console.log(dataReponse));
 
-    alert("SUCESS", "Data got sent to Blockchain!")
-    console.log(qrCode1);
+    Alert.alert("SUCESS", "Data got sent to Blockchain!")
+    
   }
 
 
@@ -143,10 +143,10 @@ export default function admin() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 15,
+    flex: 1,
     height: 60,
     width: 330,
-    marginTop: 40,
+    marginTop: 70,
     marginBottom: 50,
     backgroundColor: 'transparent',
   },

@@ -5,7 +5,7 @@ export const emailValidator = email => {
   if (!re.test(email)) return 'Ooops! We need a valid email address.';
   
   if (email == "thomas.schneider@wien.at" || email == "greta.schneider@wien.at" || email == "wolfgang.beckmann@wien.at" || email == "caroline.weber@wien.at") return '';
-  else return 'Wrong email';
+  return 'Wrong email';
 };
 
 
